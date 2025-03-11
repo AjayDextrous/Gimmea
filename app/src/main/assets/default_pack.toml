@@ -1,7 +1,7 @@
 name = "default"
 
 [categories]
-locations = [
+Location = [
     "haunted house",
     "spaceship",
     "medieval castle",
@@ -24,7 +24,7 @@ locations = [
     "coffee shop on open mic night"
 ]
 
-jobs = [
+Job = [
     "optometrist",
     "divorce lawyer",
     "bartender",
@@ -47,7 +47,7 @@ jobs = [
     "bus driver"
 ]
 
-relationships = [
+Relation = [
     "childhood friends",
     "stepmother and stepchild",
     "siblings",
@@ -70,7 +70,7 @@ relationships = [
     "pirate captain and rebellious crew member"
 ]
 
-objects = [
+Object = [
     "a cursed amulet",
     "a broken time machine",
     "an empty suitcase",
@@ -93,7 +93,7 @@ objects = [
     "a magic wand that only works sometimes"
 ]
 
-emotions = [
+Emotion = [
     "paranoid",
     "ecstatic",
     "heartbroken",
@@ -116,7 +116,7 @@ emotions = [
     "proud but trying to hide it"
 ]
 
-situations = [
+Situation = [
     "stuck in an elevator",
     "mistaken identity mix-up",
     "running from the law",
@@ -139,7 +139,7 @@ situations = [
     "undercover at a villain’s lair"
 ]
 
-quirks = [
+Quirk = [
     "constantly quoting movies",
     "terrified of left-handed people",
     "believes they're a famous celebrity",
@@ -162,7 +162,7 @@ quirks = [
     "treats everything like a high-stakes poker game"
 ]
 
-secrets = [
+Secret = [
     "they’re actually a time traveler",
     "they just committed a crime",
     "they’re in witness protection",

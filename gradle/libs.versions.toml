@@ -1,5 +1,5 @@
 [versions]
-agp = "8.8.2"
+agp = "8.9.0"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -10,6 +10,9 @@ activityCompose = "1.10.1"
 composeBom = "2025.02.00"
 koinVersion = "4.0.2"
 toml4koma = "1.2.0"
+retrofit = "2.11.0"
+kotlinx-serialization = "1.8.0"
+nav-version = "2.8.8"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,6 +29,10 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+# Navigation
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "nav-version" }
+androidx-navigation-testing = { group = "androidx.navigation", name = "navigation-testing", version.ref = "nav-version" }
 
 # Dependency Injection (Koin)
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinVersion" }
@@ -33,8 +40,12 @@ koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinVers
 # TOML Parser
 toml4k = { group = "com.github.valderman", name = "4koma", version.ref = "toml4koma" }
 
+# Retrofit
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 
