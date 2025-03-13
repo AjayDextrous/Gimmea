@@ -53,14 +53,13 @@ import kotlin.math.max
 import kotlin.math.pow
 
 @Composable
-fun CategorySuggestionsScreen(debugViewModel: DebugViewModel) {
+fun CategorySuggestionsScreen(debugViewModel: DebugViewModel, innerPadding: PaddingValues) {
     val categories by debugViewModel.categories
         .map { it.keys.toList() }
         .collectAsState(emptyList())
 
     val currentSuggestion by debugViewModel.currentSuggestion.collectAsState("")
 
-    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -78,7 +77,6 @@ fun CategorySuggestionsScreen(debugViewModel: DebugViewModel) {
                 onItemClick = { item -> debugViewModel.setCurrentSuggestion(debugViewModel.categories.value[item]!!.random()) }
             )
         }
-    }
 }
 
 @Preview(showBackground = false)
