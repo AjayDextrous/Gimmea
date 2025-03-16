@@ -57,7 +57,6 @@ fun CategorySuggestionsScreen(debugViewModel: DebugViewModel, innerPadding: Padd
     val categories by debugViewModel.categories
         .map { it.keys.toList() }
         .collectAsState(emptyList())
-
     val currentSuggestion by debugViewModel.currentSuggestion.collectAsState("")
 
         Column(
